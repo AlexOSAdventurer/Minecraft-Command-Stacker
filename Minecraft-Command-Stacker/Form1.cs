@@ -16,5 +16,15 @@ namespace Minecraft_Command_Stacker
         {
             InitializeComponent();
         }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stuffMostPeopleDontCareAboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This program was written by zero318 and AlexOSAdventurer.\n\nYou're running version 0.0.1ALPHA.");
+        }
     }
 }
