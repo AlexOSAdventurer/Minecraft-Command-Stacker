@@ -24,7 +24,7 @@ namespace Minecraft_Command_Stacker
 
         private void stuffMostPeopleDontCareAboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This program was written by zero318 and AlexOSAdventurer.\n\nYou're running version 0.0.1ALPHA.");
+            MessageBox.Show("This program was written by zero318 and AlexOSAdventurer.\n\nYou're running version 0.0.2ALPHA.");
         }
     }
 }
