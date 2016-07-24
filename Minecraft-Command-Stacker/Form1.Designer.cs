@@ -28,62 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MenuOfAwesomeness = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromSpreadsheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stuffMostPeopleDontCareAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromtxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromSpreadsheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromtxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stuffMostPeopleDontCareAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.LeftToolbar = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.AddCommand = new System.Windows.Forms.ToolStripButton();
+            this.RemoveCommand = new System.Windows.Forms.ToolStripButton();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.CommandListDisplay = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.OptionsPanel = new System.Windows.Forms.Panel();
+            this.RadioButtonHolder1 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.StartingCornerLabel = new System.Windows.Forms.Label();
+            this.CornerSelector = new System.Windows.Forms.ComboBox();
+            this.LeverBox = new System.Windows.Forms.CheckBox();
+            this.DumbPlaceholder2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.DumbPlaceholder1 = new System.Windows.Forms.Label();
-            this.OptionsPanel = new System.Windows.Forms.Panel();
-            this.LeverBox = new System.Windows.Forms.CheckBox();
-            this.CommandListPanel = new System.Windows.Forms.Panel();
-            this.DumbPlaceholder2 = new System.Windows.Forms.Label();
-            this.LeftToolbar = new System.Windows.Forms.ToolStrip();
-            this.CornerSelector = new System.Windows.Forms.ComboBox();
-            this.StartingCornerLabel = new System.Windows.Forms.Label();
-            this.RadioButtonHolder1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.DumbPlaceholder3 = new System.Windows.Forms.Label();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.commandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.MenuOfAwesomeness.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.LeftToolbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CommandListDisplay)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.OptionsPanel.SuspendLayout();
-            this.CommandListPanel.SuspendLayout();
-            this.LeftToolbar.SuspendLayout();
             this.RadioButtonHolder1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.commandBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuOfAwesomeness
@@ -112,6 +116,36 @@
             this.fileToolStripMenuItem.Text = "&File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.newToolStripMenuItem.Text = "&New";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.openToolStripMenuItem.Text = "&Open";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.saveAsToolStripMenuItem.Text = "Save &As";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -124,35 +158,35 @@
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
-            // newToolStripMenuItem
+            // undoToolStripMenuItem
             // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.newToolStripMenuItem.Text = "&New";
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.undoToolStripMenuItem.Text = "&Undo";
             // 
-            // openToolStripMenuItem
+            // redoToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.openToolStripMenuItem.Text = "&Open";
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.redoToolStripMenuItem.Text = "&Redo";
             // 
-            // saveToolStripMenuItem
+            // cutToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.cutToolStripMenuItem.Text = "Cut";
             // 
-            // saveAsToolStripMenuItem
+            // copyToolStripMenuItem
             // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saveAsToolStripMenuItem.Text = "Save &As";
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
             // 
-            // exitToolStripMenuItem
+            // pasteToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // importToolStripMenuItem
             // 
@@ -176,6 +210,12 @@
             this.fromXMLToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.fromXMLToolStripMenuItem.Text = "From &XML";
             // 
+            // fromtxtToolStripMenuItem
+            // 
+            this.fromtxtToolStripMenuItem.Name = "fromtxtToolStripMenuItem";
+            this.fromtxtToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.fromtxtToolStripMenuItem.Text = "From &txt";
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -198,42 +238,6 @@
             this.stuffMostPeopleDontCareAboutToolStripMenuItem.Text = "&Stuff most people don\'t care about";
             this.stuffMostPeopleDontCareAboutToolStripMenuItem.Click += new System.EventHandler(this.stuffMostPeopleDontCareAboutToolStripMenuItem_Click);
             // 
-            // fromtxtToolStripMenuItem
-            // 
-            this.fromtxtToolStripMenuItem.Name = "fromtxtToolStripMenuItem";
-            this.fromtxtToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.fromtxtToolStripMenuItem.Text = "From &txt";
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pasteToolStripMenuItem.Text = "&Paste";
-            // 
             // splitContainer1
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -252,6 +256,50 @@
             this.splitContainer1.SplitterDistance = 62;
             this.splitContainer1.TabIndex = 1;
             // 
+            // LeftToolbar
+            // 
+            this.LeftToolbar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LeftToolbar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.LeftToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.AddCommand,
+            this.RemoveCommand});
+            this.LeftToolbar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
+            this.LeftToolbar.Location = new System.Drawing.Point(0, 0);
+            this.LeftToolbar.Name = "LeftToolbar";
+            this.LeftToolbar.Size = new System.Drawing.Size(60, 336);
+            this.LeftToolbar.TabIndex = 0;
+            this.LeftToolbar.Text = "LeftToolbar";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.AutoToolTip = true;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(58, 38);
+            this.toolStripLabel1.Text = "Tools!";
+            this.toolStripLabel1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical270;
+            this.toolStripLabel1.ToolTipText = "This does nothing yet. :P";
+            // 
+            // AddCommand
+            // 
+            this.AddCommand.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.AddCommand.Image = ((System.Drawing.Image)(resources.GetObject("AddCommand.Image")));
+            this.AddCommand.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.AddCommand.Name = "AddCommand";
+            this.AddCommand.Size = new System.Drawing.Size(58, 20);
+            this.AddCommand.Text = "toolStripButton1";
+            this.AddCommand.Click += new System.EventHandler(this.AddCommand_Click);
+            // 
+            // RemoveCommand
+            // 
+            this.RemoveCommand.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.RemoveCommand.Image = ((System.Drawing.Image)(resources.GetObject("RemoveCommand.Image")));
+            this.RemoveCommand.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.RemoveCommand.Name = "RemoveCommand";
+            this.RemoveCommand.Size = new System.Drawing.Size(58, 20);
+            this.RemoveCommand.Text = "toolStripButton2";
+            this.RemoveCommand.Click += new System.EventHandler(this.RemoveCommand_Click);
+            // 
             // splitContainer2
             // 
             this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -261,7 +309,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.CommandListPanel);
+            this.splitContainer2.Panel1.Controls.Add(this.CommandListDisplay);
             // 
             // splitContainer2.Panel2
             // 
@@ -269,6 +317,24 @@
             this.splitContainer2.Size = new System.Drawing.Size(718, 338);
             this.splitContainer2.SplitterDistance = 464;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // CommandListDisplay
+            // 
+            this.CommandListDisplay.AllowUserToAddRows = false;
+            this.CommandListDisplay.AllowUserToDeleteRows = false;
+            this.CommandListDisplay.AllowUserToResizeColumns = false;
+            this.CommandListDisplay.AllowUserToResizeRows = false;
+            this.CommandListDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CommandListDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CommandListDisplay.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.CommandListDisplay.Location = new System.Drawing.Point(0, 0);
+            this.CommandListDisplay.MultiSelect = false;
+            this.CommandListDisplay.Name = "CommandListDisplay";
+            this.CommandListDisplay.RowHeadersVisible = false;
+            this.CommandListDisplay.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.CommandListDisplay.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.CommandListDisplay.Size = new System.Drawing.Size(462, 336);
+            this.CommandListDisplay.TabIndex = 0;
             // 
             // tabControl1
             // 
@@ -294,27 +360,6 @@
             this.tabPage1.Text = "Structure Controls";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.DumbPlaceholder1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(242, 312);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Formulas";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // DumbPlaceholder1
-            // 
-            this.DumbPlaceholder1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DumbPlaceholder1.Location = new System.Drawing.Point(3, 3);
-            this.DumbPlaceholder1.Name = "DumbPlaceholder1";
-            this.DumbPlaceholder1.Size = new System.Drawing.Size(236, 306);
-            this.DumbPlaceholder1.TabIndex = 0;
-            this.DumbPlaceholder1.Text = "This is only a potential feature.\r\n\r\nFor now, just create formulas in a spreadshe" +
-    "et program.";
-            // 
             // OptionsPanel
             // 
             this.OptionsPanel.Controls.Add(this.RadioButtonHolder1);
@@ -328,50 +373,61 @@
             this.OptionsPanel.Size = new System.Drawing.Size(234, 304);
             this.OptionsPanel.TabIndex = 0;
             // 
-            // LeverBox
+            // RadioButtonHolder1
             // 
-            this.LeverBox.AutoSize = true;
-            this.LeverBox.Enabled = false;
-            this.LeverBox.Location = new System.Drawing.Point(3, 34);
-            this.LeverBox.Name = "LeverBox";
-            this.LeverBox.Size = new System.Drawing.Size(148, 17);
-            this.LeverBox.TabIndex = 0;
-            this.LeverBox.Text = "Include Lever in Structure";
-            this.LeverBox.UseVisualStyleBackColor = true;
+            this.RadioButtonHolder1.Controls.Add(this.radioButton3);
+            this.RadioButtonHolder1.Controls.Add(this.radioButton2);
+            this.RadioButtonHolder1.Controls.Add(this.radioButton1);
+            this.RadioButtonHolder1.Location = new System.Drawing.Point(3, 96);
+            this.RadioButtonHolder1.Name = "RadioButtonHolder1";
+            this.RadioButtonHolder1.Size = new System.Drawing.Size(227, 100);
+            this.RadioButtonHolder1.TabIndex = 4;
+            this.RadioButtonHolder1.TabStop = false;
+            this.RadioButtonHolder1.Text = "Preferred Structure Type";
             // 
-            // CommandListPanel
+            // radioButton3
             // 
-            this.CommandListPanel.AutoScroll = true;
-            this.CommandListPanel.AutoSize = true;
-            this.CommandListPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.CommandListPanel.Controls.Add(this.DumbPlaceholder3);
-            this.CommandListPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CommandListPanel.Location = new System.Drawing.Point(0, 0);
-            this.CommandListPanel.Name = "CommandListPanel";
-            this.CommandListPanel.Size = new System.Drawing.Size(462, 336);
-            this.CommandListPanel.TabIndex = 0;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Enabled = false;
+            this.radioButton3.Location = new System.Drawing.Point(7, 68);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(147, 17);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.Text = "Cubic (64 blocks = 4x4x4)";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // DumbPlaceholder2
+            // radioButton2
             // 
-            this.DumbPlaceholder2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DumbPlaceholder2.Location = new System.Drawing.Point(0, 0);
-            this.DumbPlaceholder2.Name = "DumbPlaceholder2";
-            this.DumbPlaceholder2.Size = new System.Drawing.Size(234, 304);
-            this.DumbPlaceholder2.TabIndex = 1;
-            this.DumbPlaceholder2.Text = "Features that haven\'t been implemented yet have their buttons disabled.";
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Enabled = false;
+            this.radioButton2.Location = new System.Drawing.Point(7, 44);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(166, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "Quadratic (64 blocks = 8x1x8)";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // LeftToolbar
+            // radioButton1
             // 
-            this.LeftToolbar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LeftToolbar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.LeftToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1});
-            this.LeftToolbar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.LeftToolbar.Location = new System.Drawing.Point(0, 0);
-            this.LeftToolbar.Name = "LeftToolbar";
-            this.LeftToolbar.Size = new System.Drawing.Size(60, 336);
-            this.LeftToolbar.TabIndex = 0;
-            this.LeftToolbar.Text = "LeftToolbar";
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Enabled = false;
+            this.radioButton1.Location = new System.Drawing.Point(7, 20);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(155, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Linear (64 blocks = 32x1x2)";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // StartingCornerLabel
+            // 
+            this.StartingCornerLabel.AutoSize = true;
+            this.StartingCornerLabel.Location = new System.Drawing.Point(3, 54);
+            this.StartingCornerLabel.Name = "StartingCornerLabel";
+            this.StartingCornerLabel.Size = new System.Drawing.Size(193, 13);
+            this.StartingCornerLabel.TabIndex = 3;
+            this.StartingCornerLabel.Text = "Select Which Corner to Generate From:";
             // 
             // CornerSelector
             // 
@@ -392,79 +448,50 @@
             this.CornerSelector.Size = new System.Drawing.Size(227, 21);
             this.CornerSelector.TabIndex = 2;
             // 
-            // StartingCornerLabel
+            // LeverBox
             // 
-            this.StartingCornerLabel.AutoSize = true;
-            this.StartingCornerLabel.Location = new System.Drawing.Point(3, 54);
-            this.StartingCornerLabel.Name = "StartingCornerLabel";
-            this.StartingCornerLabel.Size = new System.Drawing.Size(193, 13);
-            this.StartingCornerLabel.TabIndex = 3;
-            this.StartingCornerLabel.Text = "Select Which Corner to Generate From:";
+            this.LeverBox.AutoSize = true;
+            this.LeverBox.Enabled = false;
+            this.LeverBox.Location = new System.Drawing.Point(3, 34);
+            this.LeverBox.Name = "LeverBox";
+            this.LeverBox.Size = new System.Drawing.Size(148, 17);
+            this.LeverBox.TabIndex = 0;
+            this.LeverBox.Text = "Include Lever in Structure";
+            this.LeverBox.UseVisualStyleBackColor = true;
             // 
-            // RadioButtonHolder1
+            // DumbPlaceholder2
             // 
-            this.RadioButtonHolder1.Controls.Add(this.radioButton3);
-            this.RadioButtonHolder1.Controls.Add(this.radioButton2);
-            this.RadioButtonHolder1.Controls.Add(this.radioButton1);
-            this.RadioButtonHolder1.Location = new System.Drawing.Point(3, 96);
-            this.RadioButtonHolder1.Name = "RadioButtonHolder1";
-            this.RadioButtonHolder1.Size = new System.Drawing.Size(227, 100);
-            this.RadioButtonHolder1.TabIndex = 4;
-            this.RadioButtonHolder1.TabStop = false;
-            this.RadioButtonHolder1.Text = "Preferred Structure Type";
+            this.DumbPlaceholder2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DumbPlaceholder2.Location = new System.Drawing.Point(0, 0);
+            this.DumbPlaceholder2.Name = "DumbPlaceholder2";
+            this.DumbPlaceholder2.Size = new System.Drawing.Size(234, 304);
+            this.DumbPlaceholder2.TabIndex = 1;
+            this.DumbPlaceholder2.Text = "Features that haven\'t been implemented yet have their buttons disabled.";
             // 
-            // radioButton1
+            // tabPage2
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Enabled = false;
-            this.radioButton1.Location = new System.Drawing.Point(7, 20);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(155, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Linear (64 blocks = 32x1x2)";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.tabPage2.Controls.Add(this.DumbPlaceholder1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(240, 310);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Formulas";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // DumbPlaceholder1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Enabled = false;
-            this.radioButton2.Location = new System.Drawing.Point(7, 44);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(166, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "Quadratic (64 blocks = 8x1x8)";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.DumbPlaceholder1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DumbPlaceholder1.Location = new System.Drawing.Point(3, 3);
+            this.DumbPlaceholder1.Name = "DumbPlaceholder1";
+            this.DumbPlaceholder1.Size = new System.Drawing.Size(234, 304);
+            this.DumbPlaceholder1.TabIndex = 0;
+            this.DumbPlaceholder1.Text = "This is only a potential feature.\r\n\r\nFor now, just create formulas in a spreadshe" +
+    "et program.";
             // 
-            // radioButton3
+            // commandBindingSource
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Enabled = false;
-            this.radioButton3.Location = new System.Drawing.Point(7, 68);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(147, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.Text = "Cubic (64 blocks = 4x4x4)";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // DumbPlaceholder3
-            // 
-            this.DumbPlaceholder3.AutoSize = true;
-            this.DumbPlaceholder3.Location = new System.Drawing.Point(157, 145);
-            this.DumbPlaceholder3.Name = "DumbPlaceholder3";
-            this.DumbPlaceholder3.Size = new System.Drawing.Size(115, 13);
-            this.DumbPlaceholder3.TabIndex = 0;
-            this.DumbPlaceholder3.Text = "Commands go here! :D";
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.AutoToolTip = true;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(58, 39);
-            this.toolStripLabel1.Text = "Tools!";
-            this.toolStripLabel1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical270;
-            this.toolStripLabel1.ToolTipText = "This does nothing yet. :P";
+            this.commandBindingSource.DataSource = typeof(Minecraft_Command_Stacker.Command);
             // 
             // Form1
             // 
@@ -484,22 +511,21 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.LeftToolbar.ResumeLayout(false);
+            this.LeftToolbar.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CommandListDisplay)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             this.OptionsPanel.ResumeLayout(false);
             this.OptionsPanel.PerformLayout();
-            this.CommandListPanel.ResumeLayout(false);
-            this.CommandListPanel.PerformLayout();
-            this.LeftToolbar.ResumeLayout(false);
-            this.LeftToolbar.PerformLayout();
             this.RadioButtonHolder1.ResumeLayout(false);
             this.RadioButtonHolder1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.commandBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -533,19 +559,21 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label DumbPlaceholder1;
-        private System.Windows.Forms.Panel CommandListPanel;
         private System.Windows.Forms.Panel OptionsPanel;
         private System.Windows.Forms.CheckBox LeverBox;
         private System.Windows.Forms.Label DumbPlaceholder2;
         private System.Windows.Forms.ToolStrip LeftToolbar;
         private System.Windows.Forms.ComboBox CornerSelector;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.Label DumbPlaceholder3;
         private System.Windows.Forms.GroupBox RadioButtonHolder1;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label StartingCornerLabel;
+        private System.Windows.Forms.ToolStripButton AddCommand;
+        private System.Windows.Forms.ToolStripButton RemoveCommand;
+        private System.Windows.Forms.BindingSource commandBindingSource;
+        private System.Windows.Forms.DataGridView CommandListDisplay;
     }
 }
 
